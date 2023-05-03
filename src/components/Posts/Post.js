@@ -36,14 +36,15 @@ const Post = props => {
       {/* Is LikeSection getting all the props it needs to work correctly? Please send all the props it needs */}
       {/* Component-ga 'LikeSection' ma heysataa wixii props ah oo ay u baahantahay? Hadaysan heysan, fadlan u dir */}
 
-      <LikeSection incrementLikes={incrementLikes} />
+      <LikeSection likes = {likes} incrementLikes={incrementLikes} />
 
       {/* Comments also wants its props! */}
       {/* Fadlan u dir props-ka ay 'Comments' component u baahantahay */}
       
-      <Comments />
+      <Comments post={post} />
     </div>
   );
 };
 
 export default Post;
+

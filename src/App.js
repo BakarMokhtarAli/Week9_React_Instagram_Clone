@@ -13,10 +13,13 @@
 import React from 'react';
 // Import the Posts (plural!) and SearchBar components, since they are used inside App component
 // Soo jiido Posts iyo SearchBar components-ka
+import SearchBar from './components/SearchBar/SearchBar';
+import Posts from './components/Posts/Posts'
 
 
 // Import the dummyData
 // Soo jiido dummyData
+import dummyData from './dummy-data';
 
 
 import './App.css';
@@ -32,8 +35,8 @@ const App = () => {
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
       {/* Soo jiido SearchBar iyo Posts components-ka hoos, si aad u muujiyo */}
-
-
+    <SearchBar />
+    <Posts />
       {/* Check the implementation of each component, to see what props they require, if any! */}
       {/* Fiiri sida loo sameeyo component-kasta, si aad u ogaato PROPS-ka ay u baahan tahay, hadayba jiraan props ay u baahanatahy! */}
     </div>
